@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_listes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom liste: "
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nametxt"
+            android:text="Name"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/descriptiontxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nametxt"
+            android:text="Description: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@+id/descriptiontxt"
+            android:text="Description"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/totaltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptiontxt"
+            android:text="Total: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_toRightOf="@+id/totaltxt"
+            android:text="total"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

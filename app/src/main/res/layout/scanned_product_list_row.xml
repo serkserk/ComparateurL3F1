@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/marquetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marque:  "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/marque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/marquetxt"
+            android:text="marque"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/nomtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marquetxt"
+            android:text="Produit:  "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marque"
+            android:layout_toRightOf="@+id/nomtxt"
+            android:text="nom"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pricetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nomtxt"
+            android:text="Prix: "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nom"
+            android:layout_toRightOf="@+id/pricetxt"
+            android:text="Prix: "
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/desctxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pricetxt"
+            android:text="Description: "
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_toRightOf="@+id/desctxt"
+            android:text="description"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/shoptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desctxt"
+            android:text="Magasin: "
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_toRightOf="@+id/shoptxt"
+            android:text="shop"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/ean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/shop"
+            android:layout_marginTop="5dp"
+            android:text="ean"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
